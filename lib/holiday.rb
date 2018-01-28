@@ -79,7 +79,11 @@ def all_supplies_in_holidays(holiday_hash)
   holiday_hash.each{|name,value|
     puts "#{name.to_s.capitalize}:"
     value.each{|na,va|
+<<<<<<< HEAD
       puts "  #{na.to_s.gsub("_"," ").split(/ |\_/).map(&:capitalize).join(" ")}: #{va.join(", ")}"
+=======
+      puts "  #{na.to_s.gsub("_"," ").capitalize}: #{va.join(", ")}"
+>>>>>>> 0997b670c8e7e65001066329aee1008861691046
     }
   }
 end
